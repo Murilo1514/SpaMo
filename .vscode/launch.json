@@ -1,0 +1,37 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [
+                "--anno_root",
+                "./preprocess/Phoenix14T",
+                "--model_name", 
+                "openai/clip-vit-large-patch14",
+                "--video_root",
+                "./phoenix_dl/Phoenix14T/PHOENIX-2014-T-release-v3/PHOENIX-2014-T/",
+                "--cache_dir",
+                "./cache/",
+                "--save_dir",
+                "./checkpoint/",
+                "--s2_mode",
+                "s2wrapping",
+                "--scales", 
+                "1", 
+                "2",
+                "--batch_size", 
+                "32",
+                "--device", 
+                "cpu"
+            ]
+        }
+    ]
+}
+

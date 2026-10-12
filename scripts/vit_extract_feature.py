@@ -36,7 +36,7 @@ class ViTFeatureReader(object):
         self.device = device
         self.scales = scales
         self.nth_layer = nth_layer
-        
+
         self.model = CLIPVisionModel.from_pretrained(
             model_name, output_hidden_states=True, cache_dir=cache_dir
         ).to(device).eval()

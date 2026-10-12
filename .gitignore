@@ -2,6 +2,11 @@
 node_modules/
 jspm_packages/
 
+# Internal notebooks
+.notebooks/
+phoenix_dl/
+cache/ 
+
 # Build outputs
 dist/
 build/
